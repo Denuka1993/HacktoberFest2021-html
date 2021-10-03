@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function show(){
+
+var i, no, fact;
+fact=1;
+no=Number(document.getElementById("num").value);
+for(i=1; i<=no; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("answer").value= fact;
+}
+</script>
+</head>
+<h2>LET'S FIND FACTORIAL</h2>
+<body style = "text-align: center; font-size: 25px;background-color: aquamarine;">  
+    Enter Num: <input id="num"><br><br>
+        <button onclick="show()">Factorial</button><br><br>
+
+
+        <input id="answer">
+</body>
+</html>
